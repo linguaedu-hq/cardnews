@@ -88,6 +88,10 @@ ul.grades{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:14px}
 .grade .go{color:var(--gcol)}
 .grade.soon{border-style:dashed;border-top-style:solid;box-shadow:none;background:var(--soft)}
 .grade.soon .gbadge{background:transparent;color:var(--gcol);border:1.5px solid var(--gcol)}
+.tbchip{display:inline-flex;align-items:center;height:30px;padding:0 10px;margin-left:6px;border-radius:9px;font-size:13px;font-weight:800;
+ color:#8A5A00;background:#FFF2D6;vertical-align:top}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tbchip{color:#F3C46B;background:#3A2E12}}
+:root[data-theme="dark"] .tbchip{color:#F3C46B;background:#3A2E12}
 .pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:.12em;animation:pl 1.8s ease-in-out infinite}
 @keyframes pl{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1.1)}}
 @media (prefers-reduced-motion: reduce){.pulse{animation:none}a.item{transition:none}}
@@ -101,7 +105,7 @@ footer{margin-top:26px;color:var(--sub);font-size:13px;text-align:center}
 <main>
 <nav class="crumb" aria-label="위치"><a href="../../">카드뉴스</a><span>›</span><a href="../">내신파이널 체크</a><span>›</span><span>안락중</span></nav>
 <header><span class="kick">링구아 내신파이널 체크 · 시험직전 족집게</span><h1>안락중</h1><p class="lead">학년을 골라 보세요.</p></header>
-<ul class="grades"><li><a class="grade g1" href="../../anrak-m1/"><img class="thumb" src="../../anrak-m1/og.png" alt="" decoding="async" loading="lazy"><div class="gbody"><span class="gbadge">중1</span><b>2학기 중간고사 대비</b><p>10월 6일~7일 시험 · 범위 5·6과</p><span class="go">카드 25장 · 넘겨 보기 →</span></div></a></li><li><div class="grade g2 soon"><div class="gbody"><span class="gbadge">중2</span><b><span class="pulse" aria-hidden="true"></span>곧 올라옵니다</b><p>10월 6일~7일 시험 대비 자료를 준비하고 있습니다</p></div></div></li><li><a class="grade g3" href="../../anrak-m3/"><img class="thumb" src="../../anrak-m3/og.png" alt="" decoding="async" loading="lazy"><div class="gbody"><span class="gbadge">중3</span><b>2학기 정기고사 대비</b><p>10월 26일~28일 시험 · 범위 5·6·8과</p><span class="go">카드 36장 · 넘겨 보기 →</span></div></a></li></ul>
+<ul class="grades"><li><a class="grade g1" href="../../anrak-m1/"><img class="thumb" src="../../anrak-m1/og.png" alt="" decoding="async" loading="lazy"><div class="gbody"><span class="gbadge">중1</span><b>2학기 중간고사 대비</b><p>10월 6일~7일 시험 · 범위 5·6과</p><span class="go">카드 25장 · 넘겨 보기 →</span></div></a></li><li><div class="grade g2 soon"><div class="gbody"><span class="gbadge">중2</span><span class="tbchip">교과서 바뀜</span><b><span class="pulse" aria-hidden="true"></span>곧 올라옵니다</b><p>10월 6일~7일 시험 대비 자료를 준비하고 있습니다</p></div></div></li><li><a class="grade g3" href="../../anrak-m3/"><img class="thumb" src="../../anrak-m3/og.png" alt="" decoding="async" loading="lazy"><div class="gbody"><span class="gbadge">중3</span><b>2학기 정기고사 대비</b><p>10월 26일~28일 시험 · 범위 5·6·8과</p><span class="go">카드 36장 · 넘겨 보기 →</span></div></a></li></ul>
 <nav class="more" aria-label="다른 곳"><a href="../">다른 학교 보기</a><a href="../../">카드뉴스 처음으로</a></nav>
 <footer>문의 | 링구아어학원</footer>
 </main>
