@@ -113,7 +113,11 @@ footer .copy{margin-top:4px;font-size:13px}
  h1{font-size:54px}
  .lead{font-size:17px}
  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:-56px}
- .tile{padding:20px;grid-row:span 3;grid-template-rows:subgrid}
+ /* 대표 10-09 「컴퓨터로 열었을때 공간 띄어져있는거 좁히자」: 칸끼리 줄을 맞추던 subgrid 를 풀어 표지 판이 칸마다 글 바로 아래에서 시작한다.
+    남는 높이는 표지 판(가운데 줄 1fr)이 받고 표지 그림이 그만큼 커진다(판 폭 92% 까지 · 아래 맞춤). cqh 를 모르는 브라우저는 그림 크기만 그대로다. */
+ .tile{padding:20px;grid-template-rows:auto minmax(0,1fr) auto}
+ .tile:not(.one)>.stage:not(.og):not(.wait){container-type:size;min-height:clamp(112px,16.6vw,212px)}
+ .tile:not(.one)>.stage:not(.og):not(.wait) img{width:auto;height:100cqh;max-width:92%;object-fit:contain;object-position:50% 100%}
  .one{grid-column:1/-1;grid-row:auto;grid-template-rows:none;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:28px;padding:28px;align-items:stretch}
  .one .body{display:grid;gap:16px;align-content:start}
  .one .no{font-size:84px;grid-row:1/span 3}
