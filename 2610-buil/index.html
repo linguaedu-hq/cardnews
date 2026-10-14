@@ -312,6 +312,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
    화면에서는 속성 값 그대로(= 키트·prime 검사가 보는 최종 모양 '1px, 1px') — 화면 noscript 의 별 가장자리 41화소는 motion_check STAR_PX_MAX 로 기록 */
 @media print{[data-mk-arc]{stroke-dasharray:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* 10-14 대표 「첫 장 「네이버 사전예약」 눌러도 예약 링크로」 */
+.cover-link{display:inline-flex;align-items:center;gap:inherit;color:inherit;text-decoration:none;cursor:pointer}
+.cover-link .cl-t{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--gold)}
+.cover-link .cl-a{font-weight:900;margin-left:2px}
 </style>
 </head>
 <body>
@@ -326,7 +331,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   </div>
   <div class="cover-body">
     <p class="when" data-mk="float"><span><span class="y">2027학년도 입학전형</span><span class="d" data-mk-pulse>10월 17일 (토)</span><span class="t">오전 11시</span></span></p>
-    <p class="cover-apply" data-mk="rise"><span class="chip g">신청</span>네이버 사전예약</p>
+    <p class="cover-apply" data-mk="rise"><a class="cover-link" href="https://m.booking.naver.com/booking/12/bizes/1576467/items/8119020?area=pll&amp;lang=ko&amp;service-target=map-pc&amp;startDateTime=2026-10-08T00%3A00%3A00%2B09%3A00&amp;theme=place" target="_blank" rel="noopener"><span class="chip g">신청</span><span class="cl-t">네이버 사전예약</span><span class="cl-a" aria-hidden="true">›</span></a></p>
   </div>
 </header>
 <section class="card slide" id="c2" data-n="02" role="group" aria-roledescription="slide" aria-label="2 / 8" aria-labelledby="h-c2">
