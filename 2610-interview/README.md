@@ -1,1 +1,1 @@
-영상 넣는 법: 이 폴더 index.html 7번째 줄 `var VIDEO_ZH = "";`(중국어) · 8번째 줄 `var VIDEO_JA = "";`(일본어) 따옴표 안에 영상 주소(https 로 시작하는 mp4 · webm · YouTube, 또는 이 폴더에 올린 videos/zh.mp4)를 넣고 커밋하면 그 카드에 세로 영상이 뜬다. 다시 지을 때를 위해 원본 덱 폴더의 videos.json 에도 같은 주소를 적는다.
+영상 넣는 법: 이 폴더 index.html 8번째 줄 `var VIDEO_ZH = "";`(중국어) · 9번째 줄 `var VIDEO_JA = "";`(일본어) — 맨 위 script id="lingua-videos" 안 — 따옴표 안에 영상 주소(https 로 시작하는 mp4 · webm · YouTube, 또는 이 폴더에 올린 videos/zh.mp4)를 넣고 커밋하면 그 카드에 세로 영상이 뜬다. 다시 지을 때를 위해 원본 덱 폴더의 videos.json 에도 같은 주소를 적는다.
