@@ -5,8 +5,8 @@
 <script data-note="mk-hint-every-visit">(function(){try{var ls=window.localStorage,k=[],i;for(i=0;i<ls.length;i++){if(String(ls.key(i)).indexOf('mk-hint:')===0){k.push(ls.key(i));}}for(i=0;i<k.length;i++){ls.removeItem(k[i]);}}catch(e){}})();</script>
 <script id="lingua-videos">
 /* 영상 주소 — 따옴표 안에 mp4 · webm 주소(https 로 시작) · 같은 폴더 상대 경로(videos/zh.mp4) · YouTube 주소. 비우면 대체 카드 */
-var VIDEO_ZH = "";
-var VIDEO_JA = "";
+var VIDEO_ZH = "videos/zh.mp4";
+var VIDEO_JA = "videos/ja.mp4";
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
@@ -902,7 +902,15 @@ function yt(u){var m=/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|embed\/|watch\?v=
   if(id){var ifr=document.createElement('iframe');ifr.src='https://www.youtube-nocookie.com/embed/'+id+'?playsinline=1&rel=0';
     ifr.title=v.getAttribute('aria-label');ifr.setAttribute('allow','autoplay; encrypted-media; picture-in-picture');ifr.setAttribute('allowfullscreen','');
     ifr.setAttribute('loading','lazy');fr.replaceChild(ifr,v);}
-  else{v.addEventListener('error',off);v.src=u;}
+  else{v.addEventListener('error',off);
+    if(/^videos\/[\w-]+\.mp4$/.test(u)) v.poster=u.replace(/\.mp4$/,'.jpg'); /* 같은 폴더 영상은 첫 장면 그림을 함께 둔다 */
+    /* 소리 있는 영상: 처음엔 소리 없이 자동 재생 → 영상을 한 번 누르면 소리 켜고 이어 재생(그 뒤는 controls 그대로) */
+    var down=null;
+    function sound(ev){if(!v.muted) return;if(ev&&ev.cancelable) ev.preventDefault();v.muted=false;var p=v.play();if(p&&p.catch) p.catch(function(){});}
+    v.addEventListener('pointerdown',function(ev){down=[ev.clientX,ev.clientY];});
+    v.addEventListener('pointerup',function(ev){if(down&&Math.abs(ev.clientX-down[0])<10&&Math.abs(ev.clientY-down[1])<10) sound(ev);down=null;}); /* 손가락 한 번(밀기 아님) */
+    v.addEventListener('click',sound);
+    v.src=u;}
   fr.hidden=false;fb.hidden=true;f.classList.add('has-video');if(sl) sl.classList.add('has-video');
 });
 if(!('IntersectionObserver' in window)) return;
