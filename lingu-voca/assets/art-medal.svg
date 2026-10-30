@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="la-art" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="메달">
+<title>메달</title>
+<style>
+.la-art .la-e{stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-t{fill:none;stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-y{fill:var(--lingu,#FFD45C)}.la-art .la-yd{fill:var(--lingu-deep,#F0B12A)}
+.la-art .la-s{fill:var(--sky,#2F6FBF)}.la-art .la-sl{fill:#86B6F2}.la-art .la-r{fill:var(--berry,#C8433E)}.la-art .la-rl{fill:var(--cheek,#F4A3A8)}
+.la-art .la-g{fill:var(--leaf,#23895B)}.la-art .la-gl{fill:#86C873}.la-art .la-w{fill:#FFFFFF}.la-art .la-br{fill:#C98B5B}.la-art .la-si{fill:#C9D2DA}
+.la-art .la-sh{fill:#3B2618;opacity:.18}.la-art .la-hl{fill:#FFFFFF;opacity:.8}.la-art .la-hs{fill:#FFFFFF;opacity:.45}
+@media (prefers-color-scheme:dark){.la-art .la-e,.la-art .la-t{stroke:var(--edge,#8A6F58)}.la-art .la-sh{opacity:.24}}
+</style>
+<path class="la-s la-e" d="M13 4h8.5l6 14h-8.5z"/>
+<path class="la-r la-e" d="M35 4h-8.5l-6 14h8.5z"/>
+<circle class="la-y la-e" cx="24" cy="30" r="13"/>
+<path class="la-sh" d="M24 17a13 13 0 0 1 0 26z"/>
+<circle class="la-t" cx="24" cy="30" r="8.6" style="stroke-width:1.6;stroke-dasharray:0 3.4"/>
+<polygon class="la-yd" points="24,24.4 25.64,28.34 29.9,28.68 26.65,31.46 27.64,35.62 24,33.39 20.36,35.62 21.35,31.46 18.1,28.68 22.36,28.34"/>
+<ellipse class="la-hl" cx="17.5" cy="25" rx="1.8" ry="3.2" transform="rotate(30 17.5 25)"/>
+</svg>

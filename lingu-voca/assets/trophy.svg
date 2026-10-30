@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="la-art" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="트로피">
+<title>트로피</title>
+<style>
+.la-art .la-e{stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-t{fill:none;stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-y{fill:var(--lingu,#FFD45C)}.la-art .la-yd{fill:var(--lingu-deep,#F0B12A)}
+.la-art .la-s{fill:var(--sky,#2F6FBF)}.la-art .la-sl{fill:#86B6F2}.la-art .la-r{fill:var(--berry,#C8433E)}.la-art .la-rl{fill:var(--cheek,#F4A3A8)}
+.la-art .la-g{fill:var(--leaf,#23895B)}.la-art .la-gl{fill:#86C873}.la-art .la-w{fill:#FFFFFF}.la-art .la-br{fill:#C98B5B}.la-art .la-si{fill:#C9D2DA}
+.la-art .la-sh{fill:#3B2618;opacity:.18}.la-art .la-hl{fill:#FFFFFF;opacity:.8}.la-art .la-hs{fill:#FFFFFF;opacity:.45}
+@media (prefers-color-scheme:dark){.la-art .la-e,.la-art .la-t{stroke:var(--edge,#8A6F58)}.la-art .la-sh{opacity:.24}}
+</style>
+<path class="la-t" d="M14.5 13H9.5c0 6 2.6 9.6 7 10.4M33.5 13h5c0 6-2.6 9.6-7 10.4" style="stroke-width:7"/>
+<path d="M14.5 13H9.5c0 6 2.6 9.6 7 10.4M33.5 13h5c0 6-2.6 9.6-7 10.4" style="fill:none;stroke:var(--lingu-deep,#F0B12A);stroke-width:2.4;stroke-linecap:round"/>
+<path class="la-y la-e" d="M13.5 8h21v10c0 7.4-4.7 12.5-10.5 12.5S13.5 25.4 13.5 18z"/>
+<path class="la-sh" d="M24 8h10.5v10c0 7.4-4.7 12.5-10.5 12.5z"/>
+<rect class="la-hl" x="16.6" y="11" width="3" height="10" rx="1.5"/>
+<polygon class="la-yd" points="24,12.9 25.22,15.83 28.37,16.08 25.97,18.14 26.7,21.22 24,19.57 21.3,21.22 22.03,18.14 19.63,16.08 22.78,15.83"/>
+<path class="la-yd la-e" d="M21 30.2h6v5h-6z"/>
+<rect class="la-br la-e" x="13" y="35" width="22" height="7" rx="2.5"/>
+<rect class="la-hs" x="16" y="37.2" width="8" height="1.8" rx=".9"/>
+</svg>

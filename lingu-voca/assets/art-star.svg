@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="la-art" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="별">
+<title>별</title>
+<style>
+.la-art .la-e{stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-t{fill:none;stroke:var(--edge,#3B2618);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.la-art .la-y{fill:var(--lingu,#FFD45C)}.la-art .la-yd{fill:var(--lingu-deep,#F0B12A)}
+.la-art .la-s{fill:var(--sky,#2F6FBF)}.la-art .la-sl{fill:#86B6F2}.la-art .la-r{fill:var(--berry,#C8433E)}.la-art .la-rl{fill:var(--cheek,#F4A3A8)}
+.la-art .la-g{fill:var(--leaf,#23895B)}.la-art .la-gl{fill:#86C873}.la-art .la-w{fill:#FFFFFF}.la-art .la-br{fill:#C98B5B}.la-art .la-si{fill:#C9D2DA}
+.la-art .la-sh{fill:#3B2618;opacity:.18}.la-art .la-hl{fill:#FFFFFF;opacity:.8}.la-art .la-hs{fill:#FFFFFF;opacity:.45}
+@media (prefers-color-scheme:dark){.la-art .la-e,.la-art .la-t{stroke:var(--edge,#8A6F58)}.la-art .la-sh{opacity:.24}}
+</style>
+<polygon class="la-y la-e" points="24,7 29.05,19.04 42.07,20.13 32.18,28.66 35.17,41.37 24,34.6 12.83,41.37 15.82,28.66 5.93,20.13 18.95,19.04"/>
+<polygon class="la-sh" points="24,26 29.05,19.04 42.07,20.13 32.18,28.66 35.17,41.37 24,34.6"/>
+<ellipse class="la-hl" cx="18.2" cy="21" rx="2.2" ry="3.4" transform="rotate(35 18.2 21)"/>
+<circle class="la-hl" cx="21.6" cy="16.6" r="1.2"/>
+</svg>
