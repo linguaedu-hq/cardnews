@@ -304,7 +304,7 @@ mark{padding-top:.06em;background-image:linear-gradient(var(--yel) 89%,transpare
 .feeb{margin-top:14px;border:2px solid var(--am);background:var(--am-l);padding:10px 12px;font-size:13px}
 .feeb.pm{border-color:var(--pm);background:var(--pm-l)}
 .feeb-h{margin:0 0 6px;font-weight:700;color:var(--navy2);font-size:13.5px}
-.feeb-r{margin:4px 0 0;display:grid;grid-template-columns:78px 1fr;gap:4px;align-items:baseline;font-size:12.5px}
+.feeb-r{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;column-gap:12px;row-gap:4px;align-items:baseline;font-size:12.5px}
 .feeb-r span{color:var(--sub);font-weight:700}
 .feeb-r b{font-weight:700;color:var(--ink);white-space:nowrap;letter-spacing:-.01em}
 @media (max-width:360px){.feeb-r b{white-space:normal}}
@@ -312,10 +312,10 @@ mark{padding-top:.06em;background-image:linear-gradient(var(--yel) 89%,transpare
 .feeb-s{margin:0;font-weight:700;color:var(--ink)}
 /* 수업 시간 칩: 시간이 길어져(12:05 · 15:05) 한 줄에 들어가게 좌우 여백만 줄임 */
 .times .tb{padding-left:6px;padding-right:6px}
-/* 3 · 4장 수업 시간: 시간대별 칩을 두 칸씩 반듯하게, Lunch Break 는 한 줄 전체(11-13 최유경 님) */
+/* 3 · 4장 수업 시간: 시간대별 칩을 늘이지 않고 그냥 나열(11-13 최유경 님) */
 .times{row-gap:5px}
-.times .tb{flex:1 1 calc(50% - 2px);box-sizing:border-box;justify-content:center;text-align:center}
-.times .tb.lb{flex-basis:100%}
+.times .tb{flex:0 0 auto}
+.times .tb.lb{flex-basis:auto}
 /* 수강료 장 상세 */
 .ft{flex-wrap:wrap;row-gap:4px}
 .ft-d{flex:1 0 100%;margin:2px 0 0;padding-top:6px;border-top:1px dashed rgba(27,35,64,.18);font-size:12px;color:var(--sub);font-weight:600;line-height:1.45}
