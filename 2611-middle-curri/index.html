@@ -182,7 +182,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .cover-body{padding-top:18px}
 .cue-slot{--mk-cue-bottom:calc(100% - 38px)}
 .ladder{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-between;gap:4px}
-.ladder li{display:flex;flex-direction:column;justify-content:center;flex:1 1 auto;border-radius:20px;padding:4px 18px 20px;background:rgba(255,255,255,.08);
+.ladder li{display:flex;flex-direction:column;justify-content:center;flex:1 1 auto;border-radius:20px;padding:12px 18px;background:rgba(255,255,255,.08);
   box-shadow:inset 0 0 0 1.5px rgba(249,190,58,.55)}
 .ladder li.top{background:var(--gold);box-shadow:none}
 .ladder .lk{font-size:14px;font-weight:900;letter-spacing:.08em;color:var(--gold)}
@@ -246,7 +246,7 @@ h1 em{font-style:normal;color:var(--gold)}
 /* 카드 6 단어 30개 */
 .c6-big .big b{font-size:calc(var(--v) * 104)}
 .c6-big .big small{font-size:calc(var(--v) * 34)}
-.dots30{width:min(100%,300px);margin-inline:auto;display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
+.dots30{width:min(100%,300px);margin-inline:0;display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
 .dots30 i{display:block;aspect-ratio:1;border-radius:28%;background:var(--blue)}
 .c6-rows{display:grid;gap:12px}
 .c6-rows{gap:10px}
@@ -257,12 +257,11 @@ h1 em{font-style:normal;color:var(--gold)}
 .outro .recap li{flex:1 1 auto;padding-bottom:calc(var(--u) * 10)}
 .outro .recap li:last-child{border-bottom:0;padding-bottom:0}
 .outro .recap li.stk{flex-direction:column;align-items:flex-start;justify-content:center;gap:4px}
-.outro .recap .lv5{font-size:calc(var(--v) * 19);line-height:1.3;text-align:left;white-space:normal}
+.outro .recap .lv5{font-size:calc(var(--v) * 19);line-height:1.3;text-align:left;white-space:nowrap}
 .outro .recap span{font-size:calc(var(--v) * 16.5)}
 .outro .recap b{font-size:calc(var(--v) * 46)}
 .outro .recap b small{font-size:calc(var(--v) * 20)}
 .outro .recap .w{font-size:calc(var(--v) * 22)}
-.outro .recap .fr{font-size:calc(var(--v) * 15.5);white-space:nowrap}
 .outro .recap .w i{font-style:normal;color:var(--on-navy-2);margin:0 4px}
 .goal-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .goal-flow span{padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.1);font-size:calc(var(--v) * 17);font-weight:800;color:#FFFFFF}
@@ -356,7 +355,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 <div class="hd"><span class="pill" data-mk="rise">링구아어학원 중등부</span>
 <h2 data-mk="rise">중등 3년,<br>하나의 커리로</h2></div>
 <p class="goal-flow" data-mk-chips><span>중등 내신 A</span><i class="pr"><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span>고등 내신 1등급</span></i><i class="pr"><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span class="top">수능 1등급</span></i></p>
-<ul class="recap"><li class="stk" data-mk="rise" data-mk-delay="0"><span>중1 정규반 다섯 단계</span><b class="w lv5">ELITE · PRIME · MASTER<br>AD · HA</b></li><li class="stk" data-mk="rise" data-mk-delay="140"><span>수업은 두 가지 틀</span><b class="w lv5 fr"><strong>중1</strong> <strong>ELITE · PRIME · MASTER</strong><br><strong>중1</strong> <strong>AD · HA</strong></b></li><li data-mk="rise" data-mk-delay="280"><span>학기 중 텀테스트</span><b>2<small>회</small></b></li><li data-mk="rise" data-mk-delay="420"><span>매일 단어 테스트</span><b data-mk-pulse>30<small>개</small></b></li><li data-mk="rise" data-mk-delay="560"><span>한 학기 6개월</span><b class="w">1년 2학기제</b></li></ul>
+<ul class="recap"><li class="stk" data-mk="rise" data-mk-delay="0"><span>중1 정규반 다섯 단계</span><b class="w lv5">ELITE · PRIME · MASTER<br>AD · HA</b></li><li data-mk="rise" data-mk-delay="140"><span>학기 중 텀테스트</span><b>2<small>회</small></b></li><li data-mk="rise" data-mk-delay="280"><span>매일 단어 테스트</span><b data-mk-pulse>30<small>개</small></b></li><li data-mk="rise" data-mk-delay="420"><span>한 학기 6개월</span><b class="w">1년 2학기제</b></li></ul>
 <p class="wm" data-mk="rise">© 2026 Lingua Academy. All rights reserved.</p>
 </section>
 </div>
