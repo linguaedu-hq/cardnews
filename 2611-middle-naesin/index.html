@@ -180,9 +180,11 @@ h1 em{font-style:normal;color:var(--gold)}
 :root{--mk-gold:var(--gold);--mk-shade-color:#0B1530}
 /* 표지 */
 .cover h1{font-size:calc(var(--v) * 29.5);line-height:1.28}
-.cover-body{padding-top:12px}
+.cover-body{padding-top:22px}
 .cstat{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-evenly;background:rgba(255,255,255,.08);border-radius:20px;padding:10px 16px;
   box-shadow:inset 0 0 0 1.5px rgba(249,190,58,.55)}
+.nb{white-space:nowrap}
+.bal{text-wrap:balance}
 .cstat .lb{display:block;font-size:calc(var(--v) * 16.5);font-weight:700;line-height:1.45;color:var(--on-navy-2)}
 .cstat .num{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 6px;margin-top:2px;color:var(--gold);font-weight:900;line-height:1.05;font-variant-numeric:tabular-nums}
 .cstat .num b{font-size:calc(var(--v) * 86);letter-spacing:-.02em}
@@ -238,6 +240,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .mats .fl{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
 .mats .fl span{padding:2px 9px;border-radius:9px;background:var(--card);font-size:calc(var(--v) * 15);font-weight:800;color:var(--head)}
 .mats .fl .arw{width:15px;height:15px}
+.mats .fl .pr{display:inline-flex;align-items:center;gap:4px;font-style:normal;white-space:nowrap}
 /* 카드 6 적중 */
 #c6 h2{font-size:calc(var(--v) * 27)}
 .loop{display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:16px;background:var(--navy);color:#FFFFFF;font-size:calc(var(--v) * 18);font-weight:800;line-height:1.4}
@@ -246,12 +249,12 @@ h1 em{font-style:normal;color:var(--gold)}
 .ring{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
 .donut{position:relative;width:calc(var(--u) * 232);aspect-ratio:1}
 .donut svg{display:block;width:100%;height:100%;transform:rotate(-90deg)}
-.donut circle{fill:none;stroke-width:5.6}
+.donut circle{fill:none;stroke-width:4.6}
 .donut .trk{stroke:var(--line)}
 .donut .a{stroke:var(--gold)}
 .donut .ctr{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--head);line-height:1}
-.donut .ctr b{font-size:calc(var(--u) * 54);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.donut .ctr small{font-size:calc(var(--v) * 22);margin-left:1px}
+.donut .ctr b{font-size:calc(var(--u) * 44);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.donut .ctr small{font-size:calc(var(--v) * 19);margin-left:1px}
 .ring .rk{font-size:calc(var(--v) * 18);font-weight:900;line-height:1.35;color:var(--head)}
 .ring .ra{margin-top:4px;font-size:calc(var(--v) * 22);font-weight:900;line-height:1.3;color:var(--blue)}
 .ring .rb{margin-top:2px;font-size:calc(var(--v) * 15);font-weight:700;color:var(--muted)}
@@ -314,11 +317,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 <div class="cue-slot"><div class="mk-cue mk-cue-inline" aria-hidden="true"><span class="mk-cue-t">옆으로 넘겨 보세요</span><span class="mk-cue-g"><svg class="mk-cue-v" viewBox="0 0 7 12" aria-hidden="true" focusable="false"><path d="M1.2 1.2 5.6 6 1.2 10.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="mk-cue-v" viewBox="0 0 7 12" aria-hidden="true" focusable="false"><path d="M1.2 1.2 5.6 6 1.2 10.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="mk-cue-v" viewBox="0 0 7 12" aria-hidden="true" focusable="false"><path d="M1.2 1.2 5.6 6 1.2 10.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></div>
 <div class="cover-body">
 <div class="cstat" data-mk="float"><span class="lb">2026 내신 만점</span><span class="num"><b data-mk-count="170">170</b><small>명</small><span class="tag">연인원</span></span><span class="lb">1학기 105명 + 2학기 중간 65명</span></div>
-<div class="cstat" data-mk="float"><span class="lb">중1 2학기부터 학기마다 중간 · 기말 · 시험마다</span><span class="num"><b>3</b><small>주</small><span class="w">내신대비</span></span></div>
+<div class="cstat" data-mk="float"><span class="lb bal">중1 2학기부터 학기마다 <span class="nb">중간 ·</span> <span class="nb">기말 ·</span> 시험마다</span><span class="num"><b>3</b><small>주</small><span class="w">내신대비</span></span></div>
 </div>
 <p class="foot" data-mk="rise">링구아어학원 중등부</p>
 </section>
-<section class="slide card " id="c2" role="group" aria-roledescription="slide" aria-label="2번째 카드(전체 7장): 2026 내신 실적">
+<section class="slide card " id="c2" role="group" aria-roledescription="slide" aria-label="2번째 카드(전체 7장): 2026 내신 만점">
 <div class="hd"><span class="pill" data-mk="rise"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4.5M17 6h3a3 3 0 0 1-3 4.5"/><path d="M12 14v4M8.5 21h7M9.5 18h5"/></svg>LINGUA ACADEMY · 중등부</span></div>
 <div class="stats"><div class="stat" data-mk="rise" data-mk-delay="0"><p class="k">2026 내신 만점</p><p class="v"><b data-mk-count="170">170</b><small>명</small><span class="tag">연인원</span></p><p class="d">1학기 105명 + 2학기 중간 65명</p></div><div class="stat" data-mk="rise" data-mk-delay="140"><p class="k">만점자가 나온 중학교</p><p class="v"><b data-mk-count="38">38</b><small>곳</small></p><p class="d">1학기 34곳 · 2학기 중간 29곳</p></div><div class="stat hot" data-mk="rise" data-mk-delay="280"><p class="k">2학기 중간 포인트 적중</p><p class="v"><b data-mk-count="96.5">96.5</b><small>%</small></p><p class="d">공개한 18개 시험 · 485문항 중 468문항</p></div></div>
 <p class="note" data-mk="rise">※ 포인트 적중 = 시험 문항이 짚는 교과서 문장 · 문법 · 어휘를 시험 전 링구아 자료에서 미리 다룬 문항 · 같은 문제가 나왔다는 뜻은 아닙니다</p>
@@ -335,7 +338,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 </section>
 <section class="slide card " id="c5" role="group" aria-roledescription="slide" aria-label="5번째 카드(전체 7장): 링구아가 직접 만드는 내신 자료">
 <div class="hd"><h2 data-mk="rise">링구아가 <span class="u" data-mk-sweep>직접 만드는</span> <span class="nw">내신 자료</span></h2></div>
-<ol class="mats"><li data-mk="rise" data-mk-delay="0"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2.5 8 12 13l9.5-5z"/><path d="m2.5 12.5 9.5 5 9.5-5"/><path d="m2.5 17 9.5 5 9.5-5"/></svg></span><div><p class="mt">내신플러스 POD</p><p class="md">교과서 출판사 · 과마다 따로</p><p class="fl"><span>최종점검</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span>최다빈출</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span>최고난도</span></p></div></li><li data-mk="rise" data-mk-delay="140"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="m8 12.3 2.8 2.8L16.5 9.3"/></svg></span><div><p class="mt">내신 파이널 체크</p><p class="md">시험 직전 학교별 마지막 점검</p><p class="md">그 학교 출제 형식에 맞춘 예상 문제</p></div></li><li data-mk="rise" data-mk-delay="280"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2.5h8.5L19 7v14.5H6z"/><path d="M14 2.5V7h5"/><path d="M9 11.5h7M9 15h7M9 18.5h4"/></svg></span><div><p class="mt">학교별 실전 시험지</p><p class="md">학교 시험지 형식 그대로</p><p class="md">실전 연습</p></div></li></ol>
+<ol class="mats"><li data-mk="rise" data-mk-delay="0"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2.5 8 12 13l9.5-5z"/><path d="m2.5 12.5 9.5 5 9.5-5"/><path d="m2.5 17 9.5 5 9.5-5"/></svg></span><div><p class="mt">내신플러스 POD</p><p class="md">교과서 출판사 · 과마다 따로</p><p class="fl"><span>최종점검</span><i class="pr"><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span>최다빈출</span></i><i class="pr"><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></svg><span>최고난도</span></i></p></div></li><li data-mk="rise" data-mk-delay="140"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="m8 12.3 2.8 2.8L16.5 9.3"/></svg></span><div><p class="mt">내신 파이널 체크</p><p class="md">시험 직전 학교별 마지막 점검</p><p class="md">그 학교 출제 형식에 맞춘 예상 문제</p></div></li><li data-mk="rise" data-mk-delay="280"><span class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2.5h8.5L19 7v14.5H6z"/><path d="M14 2.5V7h5"/><path d="M9 11.5h7M9 15h7M9 18.5h4"/></svg></span><div><p class="mt">학교별 실전 시험지</p><p class="md">학교 시험지 형식 그대로</p><p class="md">실전 연습</p></div></li></ol>
 </section>
 <section class="slide card " id="c6" role="group" aria-roledescription="slide" aria-label="6번째 카드(전체 7장): 시험이 끝나면 학교별 포인트 적중 분석">
 <div class="hd"><h2 data-mk="rise">시험이 끝나면<br>학교별 <span class="u" data-mk-sweep>포인트 적중</span> 분석</h2></div>
@@ -346,7 +349,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 <section class="slide card outro" id="c7" role="group" aria-roledescription="slide" aria-label="7번째 카드(전체 7장): 마무리">
 <div class="hd"><span class="pill" data-mk="rise">링구아어학원 중등부</span>
 <h2 data-mk="rise">학교마다 다른 시험,<br>학교별로 준비합니다</h2></div>
-<ul class="recap"><li data-mk="rise" data-mk-delay="0"><span>2026 내신 만점</span><b data-mk-pulse><b>170</b><small>명</small><span class="tag">연인원</span></b></li><li data-mk="rise" data-mk-delay="140"><span>만점자가 나온 중학교</span><b><b>38</b><small>곳</small></b></li><li class="stk" data-mk="rise" data-mk-delay="280"><span>중1 2학기부터 학기마다 중간 · 기말 · 시험마다</span><b class="w">3주 내신대비</b></li><li data-mk="rise" data-mk-delay="420"><span>주말 담임 내신보강<br>토 · 일 합쳐 많게는</span><b><b>175</b><small>명</small></b></li><li data-mk="rise" data-mk-delay="560"><span>시험 전날 학교별</span><b class="w">직전보강</b></li></ul>
+<ul class="recap"><li data-mk="rise" data-mk-delay="0"><span>2026 내신 만점</span><b data-mk-pulse><b>170</b><small>명</small><span class="tag">연인원</span></b></li><li data-mk="rise" data-mk-delay="140"><span>만점자가 나온 중학교</span><b><b>38</b><small>곳</small></b></li><li class="stk" data-mk="rise" data-mk-delay="280"><span class="bal">중1 2학기부터 학기마다 <span class="nb">중간 ·</span> <span class="nb">기말 ·</span> 시험마다</span><b class="w">3주 내신대비</b></li><li data-mk="rise" data-mk-delay="420"><span>주말 담임 내신보강<br>토 · 일 합쳐 많게는</span><b><b>175</b><small>명</small></b></li><li data-mk="rise" data-mk-delay="560"><span>시험 전날 학교별</span><b class="w">직전보강</b></li></ul>
 <p class="wm" data-mk="rise">© 2026 Lingua Academy. All rights reserved.</p>
 </section>
 </div>
@@ -484,7 +487,7 @@ function defLeft(k){var s=slides[k],cs=getComputedStyle(vp),base=s.offsetLeft-(s
 function measure(){if(!vp) return;var max=Math.max(0,vp.scrollWidth-vp.clientWidth);
   P0=slides.map(function(_,k){var x=opt.leftFor?opt.leftFor(k):defLeft(k);return Math.max(0,Math.min(max,x));});}
 function nearest(){var x=vp.scrollLeft,b=0,bd=Infinity;P0.forEach(function(p,k){var d=Math.abs(p-x);if(d<bd){bd=d;b=k;}});return b;}
-/* 스크롤 위치 → 카드 번호(소수). 쉬던 카드(base)에서 crossAt 만큼 벗어나면 옆 카드로 친다 — 한 값으로만 가르므로 경계에서 떨리지 않는다 */
+/* 스크롤 위치 → 카드 번호(소수). 쉬던 카드(base)에서 crossAt 만큼 벗어나면 옆 카드로 친다 — 한 값으로만 나누므로 경계에서 떨리지 않는다 */
 function fracIndex(x){var n=P0.length,k;if(n<2||x<=P0[0]) return 0;for(k=0;k<n-1;k++){if(x<P0[k+1]){var w=P0[k+1]-P0[k];return w>0?k+(x-P0[k])/w:k;}}return n-1;}
 function crossed(x){var a=opt.crossAt;if(!(a>0&&a<1)||a===.5||base<0) return nearest();
   var rel=fracIndex(x)-base,i=base+(rel>=0?Math.floor(rel+1-a):Math.ceil(rel-1+a));return Math.max(0,Math.min(slides.length-1,i));}
