@@ -656,7 +656,7 @@ h2 .hl3{font-style:normal;color:var(--green);padding:0 2px;background:linear-gra
 
 /* 막대 — 큰 순 · 덱 값 그대로 · 폭 = 값 / 33 · 차례로 차오름(키트 data-mk-grow) */
 .c-sgb-bars{list-style:none;margin:10px 0 0;padding:12px 12px 13px;display:grid;gap:7px;border-radius:var(--r);background:var(--row);box-shadow:inset 0 0 0 1.5px var(--line)}
-.c-sgb-bars li{display:grid;grid-template-columns:4.3em minmax(0,1fr);column-gap:10px;align-items:center}
+.c-sgb-bars li{display:grid;grid-template-columns:22px 4.3em minmax(0,1fr);column-gap:10px;align-items:center}.c-sgb-mk{display:block;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--line);object-fit:contain;padding:2px;box-sizing:border-box}span.c-sgb-mk{background:none;box-shadow:none}
 .c-sgb-bars b{font-size:14px;font-weight:800;line-height:1.3;color:var(--head);text-align:right;white-space:nowrap}
 .c-sgb-tr{display:flex;align-items:center;gap:6px;min-width:0}
 .c-sgb-tr i{flex:none;display:block;height:13px;width:calc((100% - 30px) * var(--v) / 33);min-width:4px;border-radius:0 4px 4px 0;background:linear-gradient(90deg,var(--navy) 0%,var(--green) 100%);transform-origin:0 50%}
@@ -755,20 +755,20 @@ h2 .hl3{font-style:normal;color:var(--green);padding:0 2px;background:linear-gra
   </div>
   <h3 class="c-sgb-h" data-mk="rise"><svg class="c-sgb-i" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 4.5h6.5M3 10h11M3 15.5h4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>학교별 수행평가 분포</h3>
   <ol class="c-sgb-bars" data-mk="rise" aria-label="학교별 수행평가 수">
-    <li><b>해운대고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:33"></i><em>33</em></span></li>
-    <li><b>포철고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:30"></i><em>30</em></span></li>
-    <li><b>김천고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:29"></i><em>29</em></span></li>
-    <li><b>청운고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:27"></i><em>27</em></span></li>
-    <li><b>부일외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:25"></i><em>25</em></span></li>
-    <li><b>부산외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:25"></i><em>25</em></span></li>
-    <li><b>일반고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:21"></i><em>21</em></span></li>
-    <li><b>광철고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:20"></i><em>20</em></span></li>
-    <li><b>풍산고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:6"></i><em>6</em></span></li>
-    <li><b>신도고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:5"></i><em>5</em></span></li>
-    <li><b>국제고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:5"></i><em>5</em></span></li>
-    <li><b>성도고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:4"></i><em>4</em></span></li>
-    <li><b>경북외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:3"></i><em>3</em></span></li>
-    <li><b>동여고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:2"></i><em>2</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/haeundae.webp" width="22" height="22" alt="해운대고등학교 교표" loading="lazy" decoding="async"><b>해운대고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:33"></i><em>33</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/pocheol.webp" width="22" height="22" alt="포항제철고등학교 교표" loading="lazy" decoding="async"><b>포철고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:30"></i><em>30</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/gimcheon.webp" width="22" height="22" alt="김천고등학교 교표" loading="lazy" decoding="async"><b>김천고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:29"></i><em>29</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/chungun.webp" width="22" height="22" alt="현대청운고등학교 교표" loading="lazy" decoding="async"><b>청운고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:27"></i><em>27</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/buil.webp" width="22" height="22" alt="부일외국어고등학교 교표" loading="lazy" decoding="async"><b>부일외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:25"></i><em>25</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/busan-fl.webp" width="22" height="22" alt="부산외국어고등학교 교표" loading="lazy" decoding="async"><b>부산외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:25"></i><em>25</em></span></li>
+    <li><span class="c-sgb-mk" aria-hidden="true"></span><b>일반고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:21"></i><em>21</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/gwangcheol.webp" width="22" height="22" alt="광양제철고등학교 교표" loading="lazy" decoding="async"><b>광철고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:20"></i><em>20</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/poongsan.webp" width="22" height="22" alt="풍산고등학교 교표" loading="lazy" decoding="async"><b>풍산고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:6"></i><em>6</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/shindo.webp" width="22" height="22" alt="신도고등학교 교표" loading="lazy" decoding="async"><b>신도고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:5"></i><em>5</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/busan-intl.webp" width="22" height="22" alt="부산국제고등학교 교표" loading="lazy" decoding="async"><b>국제고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:5"></i><em>5</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/sungdo.webp" width="22" height="22" alt="성도고등학교 교표" loading="lazy" decoding="async"><b>성도고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:4"></i><em>4</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/gyeongbuk-fl.webp" width="22" height="22" alt="경북외국어고등학교 교표" loading="lazy" decoding="async"><b>경북외고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:3"></i><em>3</em></span></li>
+    <li><img class="c-sgb-mk" src="marks/bdong-g.webp" width="22" height="22" alt="부산동여자고등학교 교표" loading="lazy" decoding="async"><b>동여고</b><span class="c-sgb-tr"><i data-mk-grow style="--v:2"></i><em>2</em></span></li>
   </ol>
 </section>
 <section class="card slide h-gold" id="c-sgx" data-n="09" role="group" aria-roledescription="slide" aria-label="9 / 11 수행평가 예시" aria-labelledby="h-c-sgx">
