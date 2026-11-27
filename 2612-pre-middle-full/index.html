@@ -484,7 +484,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
 #c1 h1{font-size:calc(var(--v) * 29)}
 #c1 .kick{margin-top:14px}
 #c1 .cover-body{gap:8px}
-#c1 .toc li{padding:6px 14px}
+#c1 .toc li{padding:8px 14px}
 #c1 .toc b{font-size:calc(var(--v) * 16)}
 #c1 .cv-st span b{font-size:calc(var(--v) * 34)}
 @media screen and (max-height:760px) and (orientation:portrait){
@@ -514,7 +514,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
 /* 11-25 밤: 줄이 늘어 넘친 만큼 여백 · 칸 높이로만 품(글 크기 그대로) */
 #c1 h1{margin-top:4px}
 #c1 .cover-body{padding-top:8px;padding-bottom:10px}
-#c1 .toc{gap:3px}
+#c1 .toc{gap:8px}
 .cover#c1 .foot{padding-bottom:14px}
 #c4 .rows{gap:7px}
 #c4 .rows > li{padding:9px 14px;gap:12px}
@@ -529,7 +529,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
   #c4 .rows .cx-k{margin-top:4px}
   #c4 .rows .cx-k li{padding:1px 8px}
 }
-#c1 .cover-top{padding-top:11px}
+#c1 .cover-top{padding-top:18px}
 /* 4장: 칩 묶음은 줄 전체 폭(번호 칸 아래까지) · 줄 높이 상한 없앰(칩이 다음 줄로 넘쳐 겹치던 것) */
 #c4 .rows.bd > li{max-height:none;row-gap:6px}
 #c4 .rows > li > .cx-k{grid-column:1 / -1;margin-top:0}
@@ -543,7 +543,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
 .rows .cx-g .sm{white-space:nowrap}
 
 /* 11-25 밤 사용자 「카드뉴스만의 디자인으로」: 표지 01 = 여정 줄 — 가는 금색 레일 · 마디 셋 · 이름표 · 갈래 칩. 팝업 괄호선 · 큰 「까지」 없음 */
-#c1 .toc li:first-child{padding-top:4px;padding-bottom:5px}
+
 .jr{--jg:6px;position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;column-gap:var(--jg);row-gap:3px;margin-top:4px;align-items:center}
 .jr .jn{position:relative;grid-row:1;height:7px}
 .jr .jn::before{content:"";position:absolute;left:0;top:0;width:7px;height:7px;border-radius:50%;background:var(--gold);z-index:1}
@@ -563,7 +563,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
 #c1 .toc .jr .jc-p{margin-top:0;padding:1px 9px}
 #c1 .toc .jr .jc-p em{padding:0;border-radius:0;background:none;box-shadow:none;font-size:13px;line-height:1.3;color:var(--gold)}
 #c1 .toc .jr .jc-p i{font-size:13px;line-height:1.3}
-#c1 .toc li:first-child{padding-top:3px;padding-bottom:3px}
+
 #c1 .jr{margin-top:2px;row-gap:3px}
 #c1 .jr .jl{line-height:1.15}
 #c1 .jr .jc{margin-top:1px}
@@ -641,7 +641,7 @@ p.opt{font-size:14px;font-weight:800;line-height:1.45;color:var(--head)}
 }
 
 /* 계단 칸 왼쪽 안쪽 여백(번호가 칸 가장자리에 붙지 않게) · 마디선도 그만큼 */
-.stairs > li{padding-left:14px}
+.stairs > li{padding-left:14px;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--accent) 55%,transparent)}
 .stairs > li::before{width:calc(var(--i) * var(--sx) + 6px)}
 @media screen and (max-height:760px) and (orientation:portrait){
   .card.stepc{padding-top:24px}
